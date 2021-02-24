@@ -157,7 +157,8 @@ var api = {
         var url = tool.getUrl('/yws/api/personal/sync/upload/' + transmitId + '?cstk=' + cstk);
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url , false);
-        xhr.setRequestHeader("Content-Type", file.type);
+        //xhr.setRequestHeader("Content-Type", file.type);
+        //xhr.setRequestHeader("Content-Type", 'image/svg+xml');
         xhr.onreadystatechange = function() {
             successful = true; // TODO
         };
