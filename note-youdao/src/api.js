@@ -158,7 +158,7 @@ var api = {
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url , false);
         //xhr.setRequestHeader("Content-Type", file.type);
-        //xhr.setRequestHeader("Content-Type", 'image/svg+xml');
+        xhr.setRequestHeader("Content-Type", 'image/svg+xml');
         xhr.onreadystatechange = function() {
             successful = true; // TODO
         };
